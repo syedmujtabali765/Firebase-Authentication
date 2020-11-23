@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Authentication</title>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDlcjmgjOR7YMuL5vwtVk2EWHFJ0QM_sjo",
+      authDomain: "fir-auth-mujtaba.firebaseapp.com",
+      databaseURL: "https://fir-auth-mujtaba.firebaseio.com",
+      projectId: "fir-auth-mujtaba",
+      storageBucket: "fir-auth-mujtaba.appspot.com",
+      messagingSenderId: "572086173117",
+      appId: "1:572086173117:web:3d2c7a388ae592a32626d4"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <form action="javascript:void(0)">
+    <label for="email">Email:
+      <input type="text" placeholder="Enter Email" id="email">
+    </label>
+    <br>
+    <br>
+    <label for="password">Password:
+      <input type="text" placeholder="Enter Password" id="password">
+    </label>
+    <br>
+    <br>
+    <button onclick="signup()">SIGN UP</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </form>
+  <form action="javascript:void(0)">
+    <label for="email">Email:
+      <input type="text" placeholder="Enter Email" id="emailLogin">
+    </label>
+    <br>
+    <br>
+    <label for="password">Password:
+      <input type="text" placeholder="Enter Password" id="passwordLogin">
+    </label>
+    <br>
+    <br>
+    <button onclick="login()">LOGIN</button>
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
